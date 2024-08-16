@@ -1,5 +1,27 @@
 {% extends "devex/base.html" %}
 {% block content %}
 {% load devex %}
-   info about site tbd
+<h2 class="fw-bold">CHIP Web: More Information</h2>
+<body>
+   <div class="container">
+      <div class="row">
+       <div class="col-6">
+           <div>
+               <p>For more detailed information about how to use CHIP Web, including in-depth explanations and visual aids, please refer to the associated scientific paper and presentation slides. </p>
+               <ul class = "wrapper list-unstyled">
+                  <li class="p-3">
+                     <a class="btn btn-success" href="link to paper" role="button">Paper</a>
+                  </li>
+                  <li class="p-3">
+                     <a class="btn btn-success" href="https://docs.google.com/presentation/d/1qEvtGFRxGttIgYojzYLoCBDUOUzzHfdOTzU2NmMeD9Y/edit?usp=sharing" role="button">Slides</a>
+                  </li>
+               </ul>
+           </div>
+       </div>
+       <div class="col-6">
+         <img src="{% static "CHIP_title.jpg" %}"  width="450" height="275"class="center">
+       </div>
+      </div>
+   </div>
+</body>
 {% endblock %}
